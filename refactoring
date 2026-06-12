@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class ListConverter {
 
-    public void convertUserList(List<String> list, String title) {
+    public void convertList(List<String> list, String title) {
         List<String> upperCaseUsers = new ArrayList<>();
         for (String item : list) {
             upperCaseUsers.add(item.toUpperCase());
@@ -18,7 +18,7 @@ public class ListConverter {
         List<String> users = List.of("harry", "ron", "hermione");
         List<String> orders = List.of("order123", "order456", "order789");
 
-        converter.convertUserList(users, "ユーザー名（大文字変換）");
-        converter.convertOrderList(orders, "注文情報（大文字変換）");
+        converter.convertList(users, "ユーザー名（大文字変換）");
+        converter.convertList(orders, "注文情報（大文字変換）");
     }
 }
